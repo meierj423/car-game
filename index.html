@@ -52,7 +52,7 @@
       // TO DO: Log all of our car's current stats to the console.
       function reWriteStats() {
         console.log(
-          `Current mileage: ${car.mileage}. Current status: ${car.isWorking}`
+          `Current mileage: ${car.mileage}. Is the car working?: ${car.isWorking}`
         );
       }
 
@@ -70,9 +70,14 @@
 
         if (letter === "h") {
           car.honk();
-        } else if (letter === "d") {
+        } else if (car.isWorking === true && letter === "d") {
           car.driveToWork();
           reWriteStats();
+        } else if (car.isWorking === true && letter === "w") {
+          car.driveAroundWorld();
+          reWriteStats();
+        } else if (letter === "t") {
+          car.getTuneUp();
         }
       }
     </script>
