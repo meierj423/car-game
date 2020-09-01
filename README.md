@@ -7,7 +7,7 @@
 
 This application allows you to use your "car" to honk, drive to work, drive around the work, and get tuneups.
 
-See the URL for the deployed appliation: meierj423.github.io/car-game/
+See the URL for the deployed application: meierj423.github.io/car-game/
 
 
 ## Table of Contents
