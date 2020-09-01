@@ -78,6 +78,9 @@
           reWriteStats();
         } else if (letter === "t") {
           car.getTuneUp();
+          reWriteStats();
+        } else if (!car.isWorking) {
+          alert("You need a tuneup. Enter 't' to get one!");
         }
       }
     </script>
